@@ -57,7 +57,7 @@ function makeHtmlBoard() {
     htmlBoard.append(row);
   }
 }
-
+// ******************************************************************************
 /** findSpotForCol: given column x, return top empty y (null if filled) */
 function findSpotForCol(x) {
   for (let y = 5; y >= 0; y--) {
@@ -67,9 +67,10 @@ function findSpotForCol(x) {
   }
   return y;
 }
+// ******************************************************************************
 
 /** placeInTable: update DOM to place piece into HTML table of board */
-
+// ******************************************************************************
 function placeInTable(y, x) {
   // TODO: make a div and insert into correct table cell
 const newDiv = document.createElement('div');
@@ -78,12 +79,15 @@ newDiv.classList.add(`P${currPlayer}`)
 const place = document.getElementById(`${y}-${x}`)
 place.appendChild(newDiv);
 }
+// ******************************************************************************
 
 /** endGame: announce game end */
-
+// ******************************************************************************
 function endGame(msg) {
-  // TODO: pop up alert message
+  // TODO: creae end game message alert
+    return alert(msg)
 }
+// ******************************************************************************
 
 /** handleClick: handle click of column top to play piece */
 function handleClick(evt) {
@@ -112,7 +116,7 @@ function handleClick(evt) {
   // TODO: check if all cells in board are filled; if so call, call endGame
   
 }
-
+// ******************************************************************************
 function togglePlayers(player) {
   if (player === 1) {
     return player + 1
@@ -120,15 +124,15 @@ function togglePlayers(player) {
     return player = 1
   }
 }
-
+// ******************************************************************************
 /** checkForWin: check board cell-by-cell for "does a win start here?" */
-
+// ******************************************************************************
 function checkForWin() {
   function _win(cells) {
     // Check four cells to see if they're all color of current player
     //  - cells: list of four (y, x) cells
     //  - returns true if all are legal coordinates & all match currPlayer
-
+// ******************************************************************************
     return cells.every(
       ([y, x]) =>
         y >= 0 &&

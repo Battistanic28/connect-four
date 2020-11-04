@@ -8,6 +8,9 @@
 
 /* pieces are div within game table cells: draw as colored circles */
 
+#game {
+  margin-top: 50px;
+}
 .piece {
   /* TODO: make into circles */
   margin: 5px;
@@ -18,18 +21,53 @@
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 .P1 {
-  background-color: blue;
+  background-color:#659AE0;
+	border-bottom-color:#436796;
+	border-left-color:#5981AF;
+	border-right-color:#5981AF;
+	border-top-color:#719CCE;
+  box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-ms-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-webkit-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-khtml-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-o-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	/* Borders */
+	border-width:1px;
+	border-style:solid;
+	border-left-color:#777;
+	border-right-color:#777;
+	border-top-color:#999;
+	border-bottom:4px solid #555;
 }
 
 .P2 {
-  background-color: red;
+  background-color:#C46A6A;
+	border-bottom-color:#A05D5D;
+	border-left-color:#AF5757;
+	border-right-color:#AF5757;
+	border-top-color:#C66767;
+  box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-ms-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-webkit-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-khtml-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	-o-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	/* Borders */
+	border-width:1px;
+	border-style:solid;
+	border-left-color:#777;
+	border-right-color:#777;
+	border-top-color:#999;
+	border-bottom:4px solid #555;
 }
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
+  border-radius: 100%;
   border: dashed 1px lightgray;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: lightgray;
 }
