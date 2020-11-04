@@ -98,6 +98,10 @@ function handleClick(evt) {
   // place piece in board and add to HTML table
   // TODO: add line to update in-memory board
   placeInTable(y, x);
+
+  // switch players
+  // TODO: switch currPlayer 1 <-> 2
+  currPlayer = togglePlayers(currPlayer)
   
   // check for win
   if (checkForWin()) {
@@ -106,11 +110,6 @@ function handleClick(evt) {
   
   // check for tie
   // TODO: check if all cells in board are filled; if so call, call endGame
-  
-  
-  // switch players
-  // TODO: switch currPlayer 1 <-> 2
-  togglePlayers(currPlayer)
   
 }
 
