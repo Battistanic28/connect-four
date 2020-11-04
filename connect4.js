@@ -15,7 +15,6 @@ const board = []; // array of rows, each row is array of cells  (board[y][x])
  *    board = array of rows, each row is array of cells  (board[y][x])
  */
 
-// **** STEP 3 ****
 function makeBoard() {
   // TODO: set "board" to empty HEIGHT x WIDTH matrix array
   const board  = [
@@ -28,7 +27,6 @@ function makeBoard() {
   ];
 }
 
-// **** STEP 4 ****
 /** makeHtmlBoard: make HTML table and row of column tops. */
 function makeHtmlBoard() {
   // TODO: get "htmlBoard" variable from the item in HTML w/ID of "board"
@@ -61,14 +59,17 @@ function makeHtmlBoard() {
 }
 
 /** findSpotForCol: given column x, return top empty y (null if filled) */
-
 function findSpotForCol(x) {
-  // TODO: write the real version of this, rather than always returning 0
-  return 0;
+  for (let y = 5; y >= 0; y--) {
+    if (!document.getElementById(`${y}-${x}`).hasChildNodes()) {
+        return y
+    }
+  }
+  return y;
 }
 
 /** placeInTable: update DOM to place piece into HTML table of board */
-// **** STEP 5 ****
+
 function placeInTable(y, x) {
   // TODO: make a div and insert into correct table cell
 const newDiv = document.createElement('div');
@@ -85,7 +86,6 @@ function endGame(msg) {
 }
 
 /** handleClick: handle click of column top to play piece */
-// **** STEP 6 ****
 function handleClick(evt) {
   // get x from ID of clicked cell
   const x = +evt.target.id;
