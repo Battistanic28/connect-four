@@ -82,7 +82,7 @@ place.appendChild(newDiv);
 /** endGame: announce game end */
 function endGame(msg) {
   // TODO: creae end game message alert
-    return setTimeout(function() {alert(msg)}, 200);
+    return setTimeout(function() {alert(msg)}, 100);
 }
 
 /** handleClick: handle click of column top to play piece */

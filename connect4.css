@@ -8,6 +8,14 @@
 
 /* pieces are div within game table cells: draw as colored circles */
 body {
+  background-color: tomato;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #game {
@@ -72,4 +80,16 @@ body {
 
 #column-top td:hover {
   background-color: lightgray;
+}
+
+.parent {
+  height: 400px;
+  width: 400px;
+  background-color: royalblue;
+}
+
+td {
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
