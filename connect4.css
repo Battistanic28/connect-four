@@ -1,115 +1,119 @@
-/* game board table */
+/* game board table styling */
 
-#board td {
-  width: 50px;
-  height: 50px;
-  border: solid 1px #666;
-}
-
-/* pieces are div within game table cells: draw as colored circles */
 body {
-  background-color: tomato;
+	background-color: tomato;
 }
 
+/* Text styling */
 h1 {
-  padding-bottom: 50px;
-  font-family: 'Righteous', cursive;
-  font-weight: 900;
-  text-align: center;
-  font-size: 4.5rem;
-  color:white;
-  text-shadow: -1px 0 black, 0 2.5px black, 1px 0 black, 0 -1px black;
+	padding-bottom: 50px;
+	font-family: 'Righteous', cursive;
+	font-weight: 900;
+	text-align: center;
+	font-size: 4.5rem;
+	color: white;
+	text-shadow: -1px 0 black, 0 2.5px black, 1px 0 black, 0 -1px black;
 }
 
+/* Game piece styling */
 #game {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 .piece {
-  /* TODO: make into circles */
-  margin: 5px;
-  width: 80%;
-  height: 80%;
-  border-radius: 100%;
+	/* TODO: make into circles */
+	margin: 5px;
+	width: 80%;
+	height: 80%;
+	border-radius: 100%;
 }
 
 /* TODO: make pieces red/blue,  depending on player 1/2 piece */
 .P1 {
-  background-color:#659AE0;
-	border-bottom-color:#436796;
-	border-left-color:#5981AF;
-	border-right-color:#5981AF;
-	border-top-color:#719CCE;
-  box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-moz-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-ms-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-webkit-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-khtml-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-o-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	background-color: #659ae0;
+	border-bottom-color: #436796;
+	border-left-color: #5981af;
+	border-right-color: #5981af;
+	border-top-color: #719cce;
+	box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-ms-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-khtml-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-o-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
 	/* Borders */
-	border-width:1px;
-	border-style:solid;
-	border-left-color:#777;
-	border-right-color:#777;
-	border-top-color:#999;
-	border-bottom:4px solid #555;
+	border-width: 1px;
+	border-style: solid;
+	border-left-color: #777;
+	border-right-color: #777;
+	border-top-color: #999;
+	border-bottom: 4px solid #555;
 }
 
 .P2 {
-  background-color:#C46A6A;
-	border-bottom-color:#A05D5D;
-	border-left-color:#AF5757;
-	border-right-color:#AF5757;
-	border-top-color:#C66767;
-  box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-moz-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-ms-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-webkit-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-khtml-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
-	-o-box-shadow:inset 0 0 5px 0 rgba(255,255,255,0.5);
+	background-color: #c46a6a;
+	border-bottom-color: #a05d5d;
+	border-left-color: #af5757;
+	border-right-color: #af5757;
+	border-top-color: #c66767;
+	box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-moz-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-ms-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-khtml-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
+	-o-box-shadow: inset 0 0 5px 0 rgba(255, 255, 255, 0.5);
 	/* Borders */
-	border-width:1px;
-	border-style:solid;
-	border-left-color:#777;
-	border-right-color:#777;
-	border-top-color:#999;
-	border-bottom:4px solid #555;
+	border-width: 1px;
+	border-style: solid;
+	border-left-color: #777;
+	border-right-color: #777;
+	border-top-color: #999;
+	border-bottom: 4px solid #555;
 }
+
+/* Top row styling */
 /* column-top is table row of clickable areas for each column */
+#board td {
+	width: 50px;
+	height: 50px;
+	border: solid 1px #666;
+}
 
 #column-top td {
-  background-color: tomato;
-  border: dashed 2px black;
+	background-color: tomato;
+	border: dashed 2px black;
 }
 
 #column-top td:hover {
-  background-color: gold;
-  cursor: pointer;
+	background-color: gold;
+	cursor: pointer;
 }
 
+/* Game board parent div positioning */
 .parent {
-  position: relative;
-  margin: auto;
-  height: 337px;
-  width: 400px;
-  border-radius: 10px;
-  background-color: royalblue;
-  box-shadow: 5px 10px 18px black;
-  
+	position: relative;
+	margin: auto;
+	height: 337px;
+	width: 400px;
+	border-radius: 10px;
+	background-color: royalblue;
+	box-shadow: 5px 10px 18px black;
 }
 
+/* Styling for table cells */
 td {
-  /* background-color: white; */
-  background-color: white;
-  border-radius: 100%;
-  box-shadow: inset 2px 5px 8px black;
+	background-color: white;
+	border-radius: 100%;
+	box-shadow: inset 2px 5px 8px black;
 }
 
+/* Center table cells within game board parent div*/
 table {
-  position: absolute;
-  bottom: 0;
-  left: 2.5px;
+	position: absolute;
+	bottom: 0;
+	left: 2.5px;
 }
 
+/* Remove box shadow added to td */
 #column-top td {
-  box-shadow: none;
+	box-shadow: none;
 }
